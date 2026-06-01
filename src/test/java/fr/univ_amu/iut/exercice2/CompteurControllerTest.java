@@ -34,7 +34,6 @@ class CompteurControllerTest {
 
   // --- Étape 1 : le label affiche 0 au démarrage ---
 
-  @Disabled("Retire cette annotation pour activer le test")
   @Test
   @Order(1)
   void le_compteur_affiche_zero_au_demarrage(FxRobot robot) {
@@ -49,7 +48,6 @@ class CompteurControllerTest {
 
   // --- Étape 2 : le bouton + incrémente ---
 
-  @Disabled("Retire cette annotation pour activer le test")
   @Test
   @Order(2)
   void le_bouton_plus_est_present_et_libelle_avec_plus(FxRobot robot) {
@@ -60,7 +58,6 @@ class CompteurControllerTest {
     assertThat(boutonPlus.getText()).as("le bouton incrémenter doit afficher \"+\"").contains("+");
   }
 
-  @Disabled("Retire cette annotation pour activer le test")
   @Test
   @Order(3)
   void cliquer_sur_le_bouton_plus_incremente_le_compteur_de_un(FxRobot robot) {
@@ -72,7 +69,6 @@ class CompteurControllerTest {
         .isEqualTo("1");
   }
 
-  @Disabled("Retire cette annotation pour activer le test")
   @Test
   @Order(4)
   void trois_clics_sur_plus_portent_le_compteur_a_trois(FxRobot robot) {
