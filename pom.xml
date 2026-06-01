@@ -146,6 +146,8 @@
                 <version>${maven.compiler.plugin.version}</version>
                 <configuration>
                     <release>${maven.compiler.release}</release>
+                    <source>8</source>
+                    <target>8</target>
                 </configuration>
             </plugin>
 
