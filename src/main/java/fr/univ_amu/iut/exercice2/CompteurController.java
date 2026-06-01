@@ -51,6 +51,7 @@ public class CompteurController {
     // Ainsi, chaque fois que la valeur de `compteur` change (via
     // incrementer/decrementer/reinit),
     // le label se met à jour automatiquement - aucun setText() à appeler !
+    compteur.set(0);
     labelCompteur.textProperty().bind(compteur.asString());
   }
 
