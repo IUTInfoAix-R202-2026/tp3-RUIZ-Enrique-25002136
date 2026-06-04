@@ -84,7 +84,6 @@ class CompteurControllerTest {
 
   // --- Étape 3 : le bouton − décrémente ---
 
-  @Disabled("Retire cette annotation pour activer le test")
   @Test
   @Order(5)
   void cliquer_sur_le_bouton_moins_decremente_le_compteur_de_un(FxRobot robot) {
@@ -96,7 +95,6 @@ class CompteurControllerTest {
         .isEqualTo("-1");
   }
 
-  @Disabled("Retire cette annotation pour activer le test")
   @Test
   @Order(6)
   void deux_increments_puis_deux_decrements_ramenent_le_compteur_a_zero(FxRobot robot) {
@@ -112,7 +110,6 @@ class CompteurControllerTest {
 
   // --- Étape 4 : le bouton Réinitialiser ---
 
-  @Disabled("Retire cette annotation pour activer le test")
   @Test
   @Order(7)
   void cliquer_sur_reinitialiser_remet_le_compteur_a_zero(FxRobot robot) {
